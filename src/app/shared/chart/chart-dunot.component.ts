@@ -38,11 +38,14 @@ export class ChartDunotComponent extends UtilChart implements AfterViewInit {
       val = this.data[categ];
       var slice_angle = (2 * Math.PI * val) / total_value;
 
+      let widthCanvas = canvasEl.width / 2;
+      let heightCanvas = canvasEl.height / 2;
+
       this.drawPieSlice(
         ctx,
-        canvasEl.width / 2,
-        canvasEl.height / 2,
-        Math.min(canvasEl.width / 2, canvasEl.height / 2),
+        widthCanvas,
+        heightCanvas,
+        Math.min(widthCanvas, heightCanvas),
         start_angle,
         start_angle + slice_angle,
         this.colors[color_index % this.colors.length]
@@ -67,13 +70,12 @@ export class ChartDunotComponent extends UtilChart implements AfterViewInit {
       val = this.data[categ];
       slice_angle = (2 * Math.PI * val) / total_value;
       let pieRadius = Math.min(canvasEl.width / 2, canvasEl.height / 2);
-      let labelX = canvasEl.width / 2 + (pieRadius / 2) * Math.cos(start_angle + slice_angle / 2);
-      let labelY = canvasEl.height / 2 + (pieRadius / 2) * Math.sin(start_angle + slice_angle / 2);
 
       //to create the doughnut chart
-      let offset = (pieRadius * this.doughnutHoleSize) / 1;
-      labelX = canvasEl.width / 2 + (offset + pieRadius / 2) * Math.cos(start_angle + slice_angle / 2);
-      labelY = canvasEl.height / 2 + (offset + pieRadius / 2) * Math.sin(start_angle + slice_angle / 2);
+      let offset = (pieRadius * this.doughnutHoleSize) / 2;
+      let offsetPieRadius = offset + pieRadius / 2;
+      let labelX = canvasEl.width / 2 + (offsetPieRadius) * Math.cos(start_angle + slice_angle / 2);
+      let labelY = canvasEl.height / 2 + (offsetPieRadius) * Math.sin(start_angle + slice_angle / 2);
 
       let labelText = Math.round((100 * val) / total_value);
       if (labelText > 0) {
