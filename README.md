@@ -1,27 +1,64 @@
-# ChartCanvas
+# ng2-charts [![npm version](https://badge.fury.io/js/ng2-charts.svg)](http://badge.fury.io/js/ng2-charts) [![npm downloads](https://img.shields.io/npm/dm/ng2-charts.svg)](https://npmjs.org/ng2-charts) ![Travis CI](https://travis-ci.org/valor-software/ng2-charts.svg?branch=development) [slack](https://ngx-home.slack.com)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Beautiful charts for Angular based on Chart.js
 
-## Development server
+[![NPM](https://nodei.co/npm/ng2-charts.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/ng2-charts)
+[![NPM](https://nodei.co/npm-dl/ng2-charts.png?height=3&months=9)](https://npmjs.org/ng2-charts)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Usage & Demo
 
-## Code scaffolding
+Samples using `ng2-charts@next`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://valor-software.com/ng2-charts/
 
-## Build
+- - -
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Installation
 
-## Running unit tests
+You can install ***ng2-charts*** by using the Angular CLI:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  ```bash
+  ng add ng2-charts@next
+  ```
 
-## Running end-to-end tests
+The required packages will be automatically installed, and your `app.module.ts` will be updated with the required
+changes to start using the library right away.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Manual install through package managers
 
-## Further help
+1. You can install ***ng2-charts*** using npm
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  ```bash
+  npm install ng2-charts@next --save
+  ```
+
+or yarn
+
+  ```bash
+  yarn add ng2-charts@next --save
+  ```
+
+
+
+3. Importe o `ChartModule` no módulo principal do seu aplicativo:
+
+  ```typescript
+  import { ChartModule } from 'chart-canvas';
+
+  // In your App's module:
+  imports: [
+    ChartModule
+  ]
+  ```
+
+## Solução de problemas
+
+Siga estas diretrizes ao relatar bugs e solicitações de recursos:
+
+1. Use a placa [GitHub Issues] (https://github.com/dudulive/chartCanvas/issues) para relatar bugs e solicitações de recursos (
+   não é o nosso endereço de e-mail)
+2. Escreva ** sempre ** as etapas para reproduzir o erro. Dessa forma, podemos nos concentrar em corrigir o bug, não arranhar nosso
+   cabeças tentando reproduzi-lo.
+
+Obrigado pela compreensão!
+
