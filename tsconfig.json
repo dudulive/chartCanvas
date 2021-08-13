@@ -1,5 +1,6 @@
 {
   "compileOnSave": false,
+  "strictPropertyInitialization": false,
   "compilerOptions": {
     "baseUrl": "./",
     "importHelpers": true,
