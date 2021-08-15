@@ -28,6 +28,10 @@ or yarn
     ChartModule
   ]
   ```
+  
+### Instalação
+
+Exemplos
 
 ## Solução de problemas
 
