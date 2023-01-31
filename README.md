@@ -64,8 +64,10 @@ export class AppComponent {
 }
 ```
 ## Propriedades
-data: () - Entrada de dados do gráfico onde é passado chave(legendas) e valor;
-colors: () - Entrada de cores onde seque e ordem dos dados com a cor;
+`data`: Entrada de dados do gráfico onde é passado chave(legendas) e valor;
+
+`colors`: Entrada de cores onde seque e ordem dos dados com a cor;
+
 ## Solução de problemas
 
 Siga estas diretrizes ao relatar bugs e solicitações de recursos:
