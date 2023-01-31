@@ -23,9 +23,15 @@ yarn add chart-canvas@next --save
 ```typescript
 import { ChartModule } from "chart-canvas";
 
-// In your App's module:
-imports: [ChartModule];
-```
+  // In your App's module:
+  imports: [
+    ChartModule
+  ]
+  ```
+  
+### Instalação
+
+Exemplos
 
 ### API
 ## Tipos de gráficos
