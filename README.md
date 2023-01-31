@@ -28,12 +28,9 @@ import { ChartModule } from "chart-canvas";
     ChartModule
   ]
   ```
-  
-### Instalação
-
-Exemplos
 
 ### API
+
 ## Tipos de gráficos
 1. Há uma diretiva para todos os tipos de gráficos: , e há 2 tipos de gráficos: dunot e pie.
    Você pode usar a diretiva em um elemento da seguinte maneira:
