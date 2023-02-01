@@ -27,15 +27,18 @@ export class ChartPieComponent extends UtilChart implements AfterViewInit {
 
     let total_value = 0;
     let color_index = 0;
-    for (var categ in this.data) {
-      var val = this.data[categ];
+    let categ: any = {};
+    let val: any = {};
+    let slice_angle = 0;
+    for (categ in this.data) {
+      val = this.data[categ];
       total_value += val;
     }
 
     let start_angle = 0;
     for (categ in this.data) {
       val = this.data[categ];
-      var slice_angle = (2 * Math.PI * val) / total_value;
+      slice_angle = (2 * Math.PI * val) / total_value;
 
       this.drawPieSlice(
         ctx,
