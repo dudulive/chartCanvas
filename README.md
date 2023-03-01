@@ -39,6 +39,8 @@ import { ChartModule } from "chart-canvas";
 <canvas-chart-dunot [data]="data" [colors]="colors"></canvas-chart-dunot>
 
 <canvas-chart-pie [data]="data" [colors]="colors"></canvas-chart-pie>
+
+<canvas-chart-bar [data]="data" [colors]="colors"></canvas-chart-bar>
 ```
 
 ```typescript
@@ -67,6 +69,8 @@ export class AppComponent {
 `data`: Entrada de dados do gráfico onde é passado chave(legendas) e valor;
 
 `colors`: Entrada de cores onde seque e ordem dos dados com a cor;
+
+`seriesName`: Titulo usado no gráfico de barras;
 
 ## Solução de problemas
 

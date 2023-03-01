@@ -19,7 +19,7 @@ export class ChartBarComponent extends UtilChart implements AfterViewInit {
   @Input()
   colors: string[] = [];
   @Input()
-  seriesName = "Vinyl records";
+  seriesName = "";
 
   private canvasEl: HTMLCanvasElement;
   private ctx;
